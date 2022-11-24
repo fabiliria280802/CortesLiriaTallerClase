@@ -1,70 +1,76 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CortesLiriaTallerClase.MainPage"
-             Title="Holy Grail Layout">
+             x:Class="CortesLiriaTallerClase.MainPage">
 
     <FlexLayout Direction="Column">
+        <!-- Primera columna. Contiene rojo, espacio y verde. -->
+        <FlexLayout FlexLayout.Grow="1" JustifyContent="SpaceBetween">
+            
+            <Label
+                   FlexLayout.AlignSelf="Start"
+                   FontSize="18"
+                   WidthRequest="40"
+                   HeightRequest="40"
+                   BackgroundColor="Red"
+                   />
+            
+            <Label 
+                   FontSize="18"
+                   WidthRequest="1040"
+                   HeightRequest="50"
+                   BackgroundColor="Transparent"
+                   />
+            
+            <Label
+                   FlexLayout.AlignSelf="Start"
+                   FontSize="18"
+                   WidthRequest="40"
+                   HeightRequest="40"
+                   BackgroundColor="Green"
+                   />
+        </FlexLayout>
+        
+        <!-- Segunda columna. Contiene gris y negro. -->
 
-        <FlexLayout FlexLayout.Grow="0" HeightRequest="40">
-            <!-- Header -->
-            <Label Text=""  WidthRequest="40"
-               FontSize="18"
-               BackgroundColor="Red"
-               HorizontalTextAlignment="Start" />
+        <FlexLayout FlexLayout.Grow="1">
+            
+            <Label 
+                   FontSize="70"
+                   Text="▮"
+                   TextColor="Black"
+                   Margin="0"
+                   WidthRequest="150"
+                   HeightRequest="250"
+                   BackgroundColor="Gray"
+                   FlexLayout.Grow="1"
+                    />
+            
         </FlexLayout>
 
-        <FlexLayout FlexLayout.Grow="0" HeightRequest="40">
+        <!-- Tercera columna. Contiene azul, espacio y amarillo. -->
+        <FlexLayout FlexLayout.Grow="1" JustifyContent="SpaceBetween">
 
+            <Label
+                   FlexLayout.AlignSelf="End"
+                   FontSize="18"
+                   WidthRequest="40"
+                   HeightRequest="40"
+                   BackgroundColor="Blue"
+                   />
+            <Label 
+                
+                   FontSize="18"
+                   WidthRequest="1040"
+                   HeightRequest="50"
+                   BackgroundColor="Transparent"
+                   />
+            <Label
+                   FlexLayout.AlignSelf="End"
+                   FontSize="18"
+                   WidthRequest="40"
+                   HeightRequest="40"
+                   BackgroundColor="Yellow"
+                   />
         </FlexLayout>
-
-        <FlexLayout  HeightRequest="20" >
-            <Label Text="" WidthRequest="40"
-               FontSize="18"
-               Padding="0,10,0,0"
-               BackgroundColor="Gray"
-               FlexLayout.Grow="1"/>
-
-            <Label Text="" HeightRequest="50" WidthRequest="50" 
-               FontSize="222"
-               Padding="0,10,0,0"
-               BackgroundColor="Green" />
-
-        </FlexLayout>
-
-
-        <FlexLayout FlexLayout.Grow="9" HeightRequest="50">
-            <Label Text="" HeightRequest="50" WidthRequest="50"
-               FontSize="222"
-               BackgroundColor="Blue"
-               HorizontalTextAlignment="End" />
-        </FlexLayout>
-        <!-- Body -->
-        <FlexLayout FlexLayout.Grow="1" >
-            <!-- Content -->
-            <Label Text="" HeightRequest="50" WidthRequest="50"
-                   FlexLayout.AlignSelf="Center"
-                   
-                   FontSize="1000"
-                   BackgroundColor="White" 
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FlexLayout.Grow="1" />
-
-            <Label Text="" HeightRequest="50" WidthRequest="50"
-                   FlexLayout.AlignSelf="Center"
-                   FontSize="222"
-                   BackgroundColor="Yellow" 
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FlexLayout.Grow="1" />
-
-        </FlexLayout>
-
-
-        <!-- Footer -->
-        <Label Text="FOOTER"
-               FontSize="18"
-               BackgroundColor="Pink"
-               HorizontalTextAlignment="Center" />
     </FlexLayout>
 </ContentPage>
