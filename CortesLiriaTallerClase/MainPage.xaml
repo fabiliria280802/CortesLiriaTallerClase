@@ -14,7 +14,7 @@
                 BackgroundColor="Red"
                 />
 
-            <!-- Esta comentado porque le comando SpaceBetween en la linea 7
+            <!-- Esta comentado porque el comando SpaceBetween en la linea 7
             ya le da la misma cantidad de espacio entre el label rojo y el
             label verde, por ende no necesita un label adicional transparente que
             divida el espacio.
@@ -61,7 +61,7 @@
                 BackgroundColor="Blue"
                 />
 
-            <!-- Esta comentado porque le comando SpaceBetween en la linea 55
+            <!-- Esta comentado porque el comando SpaceBetween en la linea 55
             ya le da la misma cantidad de espacio entre el label azul y el
             label amarillo, por ende no necesita un label adicional transparente que
             divida el espacio.
