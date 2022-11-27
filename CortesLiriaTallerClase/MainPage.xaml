@@ -5,72 +5,82 @@
     <FlexLayout Direction="Column">
         <!-- Primera columna. Contiene rojo, espacio y verde. -->
         <FlexLayout FlexLayout.Grow="1" JustifyContent="SpaceBetween">
-            
+
             <Label
-                   FlexLayout.AlignSelf="Start"
-                   FontSize="18"
-                   WidthRequest="40"
-                   HeightRequest="40"
-                   BackgroundColor="Red"
-                   />
-            
-            <Label 
-                   FontSize="18"
-                   WidthRequest="1040"
-                   HeightRequest="50"
-                   BackgroundColor="Transparent"
-                   />
-            
+                FlexLayout.AlignSelf="Start"
+                FontSize="18"
+                WidthRequest="40"
+                HeightRequest="40"
+                BackgroundColor="Red"
+                />
+
+            <!-- Esta comentado porque le comando SpaceBetween en la linea 7
+            ya le da la misma cantidad de espacio entre el label rojo y el
+            label verde, por ende no necesita un label adicional transparente que
+            divida el espacio.
+
             <Label
-                   FlexLayout.AlignSelf="Start"
-                   FontSize="18"
-                   WidthRequest="40"
-                   HeightRequest="40"
-                   BackgroundColor="Green"
-                   />
+            FontSize="18"
+            WidthRequest="1040"
+            HeightRequest="50"
+            BackgroundColor="Transparent"
+            />-->
+            <Label
+                FlexLayout.AlignSelf="Start"
+                FontSize="18"
+                WidthRequest="40"
+                HeightRequest="40"
+                BackgroundColor="Green"
+                />
         </FlexLayout>
-        
+
         <!-- Segunda columna. Contiene gris y negro. -->
 
         <FlexLayout FlexLayout.Grow="1">
-            
-            <Label 
-                   FontSize="70"
-                   Text="▮"
-                   TextColor="Black"
-                   Margin="0"
-                   WidthRequest="150"
-                   HeightRequest="250"
-                   BackgroundColor="Gray"
-                   FlexLayout.Grow="1"
-                    />
-            
+
+            <Label
+                FontSize="70"
+                Text="▮"
+                TextColor="Black"
+                Margin="0"
+                WidthRequest="150"
+                HeightRequest="200"
+                BackgroundColor="Gray"
+                FlexLayout.Grow="1"
+                />
         </FlexLayout>
 
         <!-- Tercera columna. Contiene azul, espacio y amarillo. -->
         <FlexLayout FlexLayout.Grow="1" JustifyContent="SpaceBetween">
 
             <Label
-                   FlexLayout.AlignSelf="End"
-                   FontSize="18"
-                   WidthRequest="40"
-                   HeightRequest="40"
-                   BackgroundColor="Blue"
-                   />
-            <Label 
-                
-                   FontSize="18"
-                   WidthRequest="1040"
-                   HeightRequest="50"
-                   BackgroundColor="Transparent"
-                   />
+                FlexLayout.AlignSelf="End"
+                FontSize="18"
+                WidthRequest="40"
+                HeightRequest="40"
+                BackgroundColor="Blue"
+                />
+
+            <!-- Esta comentado porque le comando SpaceBetween en la linea 55
+            ya le da la misma cantidad de espacio entre el label azul y el
+            label amarillo, por ende no necesita un label adicional transparente que
+            divida el espacio.
+
             <Label
-                   FlexLayout.AlignSelf="End"
-                   FontSize="18"
-                   WidthRequest="40"
-                   HeightRequest="40"
-                   BackgroundColor="Yellow"
-                   />
+
+            FontSize="18"
+            WidthRequest="1040"
+            HeightRequest="50"
+            BackgroundColor="Transparent"
+            />-->
+
+            <Label
+                FlexLayout.AlignSelf="End"
+                FontSize="18"
+                WidthRequest="40"
+                HeightRequest="40"
+                BackgroundColor="Yellow"
+                />
         </FlexLayout>
     </FlexLayout>
 </ContentPage>
